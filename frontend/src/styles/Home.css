@@ -1,0 +1,188 @@
+/* Home.css */
+
+.home-container {
+  /* padding: 20px; */
+  background-color: #eee4e3;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  align-content: center;
+}
+
+.logo {
+  color: #f06d6b;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-links a,
+.favourite-link {
+  /* margin: 0 15px; */
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  /* background: none; */
+  border: none;
+  cursor: pointer;
+  /* margin-right: 50px; */
+  /* align-items: center; */
+  /* background-color: #f06d6b; */
+}
+
+.nav-links a:hover,
+.favourite-link:hover {
+  text-decoration: underline;
+}
+
+.categories-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.category-button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: 2px solid #f06d6b;
+  border-radius: 20px;
+  background-color: transparent;
+  color: #f06d6b;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.category-button.active,
+.category-button:hover {
+  background-color: #f06d6b;
+  color: #fff;
+}
+
+.meals-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.meal-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.meal-card:hover {
+  transform: scale(1.05);
+  background-color: #f2cfce;
+}
+
+.meal-image {
+  width: 100%;
+  height: 200px; /* Set a fixed height for the images */
+  overflow: hidden;
+  border-radius: 8px;
+  padding-top: 0 !important;
+  /* margin-bottom: 10px; */
+}
+
+.meal-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire div without distortion */
+  border-radius: 8px;
+}
+
+.meal-info {
+  padding: 10px 0;
+}
+.favourite-container {
+  cursor: pointer;
+}
+
+.meal-category {
+  display: flex;
+  margin-bottom: 3px !important;
+  align-items: center;
+  justify-content: space-between; /* Aligns category label and heart icon in a row */
+  margin-bottom: 75px; /* Adds some space below the category and heart icon */
+  margin-top: -50px;
+}
+
+.category-label {
+  font-size: 0.9rem;
+  color: #777;
+  margin-right: 10px; /* Space between the label and heart icon */
+}
+
+.heart-icon {
+  font-size: 1.5rem;
+  color: #f06d6b; /* Default color for the heart icon (outline) */
+  transition: color 0.3s ease;
+  stroke: #f06d6b; /* Outline color for non-selected */
+  stroke-width: 40;
+  fill: none; /* Hollow inside by default */
+}
+
+.heart-icon.active {
+  fill: #f06d6b; /* Solid red color when active */
+  color: #f06d6b; /* Fallback color for active state */
+}
+
+.meal-name {
+  text-align: center; /* Center-align the meal name below the category */
+  margin-top: 15px; /* Adds space between the category and meal name */
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.settings-container {
+  position: relative;
+  display: inline-block;
+}
+
+.settings-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #777;
+  margin-left: 20px;
+  transition: color 0.3s ease;
+}
+
+.settings-icon:hover {
+  color: #333;
+}
+
+.settings-dropdown {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* padding: 10px; */
+  z-index: 1000;
+}
+
+.logout-button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: #f06d6b;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #f06d6b;
+  border-radius: 8px;
+  color: #ffffff;
+}

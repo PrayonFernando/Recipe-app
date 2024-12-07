@@ -1,0 +1,93 @@
+/* src/pages/Login.css */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2; /* Light gray background */
+}
+
+.login-box {
+  background: #ffffff;
+  padding: 40px;
+  width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 500;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+  /* color: #ff5775 !important; */
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #555 !important;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #555;
+}
+
+.input-group input:focus {
+  border-color: #ffffffd1 !important; /* Pink border when focused */
+  outline: none;
+  box-shadow: none !important;
+}
+
+.login-button {
+  background-color: #ff6f91; /* Pink button */
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  width: 100%;
+}
+
+.login-button:hover {
+  background-color: #ff5775; /* Darker pink for hover effect */
+}
+
+.error-message {
+  color: #ff6f91;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.register-link {
+  font-size: 14px;
+}
+
+.register-link a {
+  color: #ff6f91;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}

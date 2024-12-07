@@ -1,0 +1,98 @@
+/* src/pages/Register.css */
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2; /* Light gray background */
+}
+
+.register-box {
+  background: #ffffff;
+  padding: 40px;
+  width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 500;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
+  color: #fff;
+}
+
+.input-group label {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.input-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.input-group input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.register-button {
+  background-color: #ff6f91; /* Pink button */
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  width: 40%;
+}
+
+.register-button:hover {
+  background-color: #ff5775; /* Darker pink for hover effect */
+}
+
+.error-message {
+  color: #ff6f91;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.login-link {
+  font-size: 14px;
+}
+
+.login-link a {
+  color: #ff6f91;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+.error-text {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 5px;
+  margin-bottom: -18px;
+}
